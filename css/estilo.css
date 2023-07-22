@@ -20,6 +20,12 @@ html body {
     padding: 0;
   }
 
+  /*quitar estilo a los enlaces*/
+  a {
+    color: initial;
+    text-decoration: none;
+  }
+
 /*--------- Navegador------------
 nav{
     display: flex;
@@ -62,14 +68,12 @@ a img{
     align-items: center;
     justify-content: space-between;
     background-color: #387162;
-    color: white;
     height: 4em;
     padding: 10px;
 }
 
 nav-menu {
   display: flex;
-  flex-direction: row;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -78,7 +82,10 @@ nav-menu {
 li {
     margin: 0 1rem;
     overflow: hidden;
-    list-style: none;
+    background-color: #387162;
+    color: white;
+    text-decoration: none;
+    display: inline;
 }
 
 .menu-button-container {
@@ -100,6 +107,15 @@ li {
     padding-right: 3em;
     border: 0;
 }
+nav a.point:hover {
+    color: #6AE8C7;
+    cursor: pointer;
+    outline: 0;
+}
+
+.nav-menu>ul {
+    
+}
 
 @media (max-width:768px) {
     .menu-button-container {
@@ -109,7 +125,7 @@ li {
     .nav-menu {
         position: absolute;
         top: 4px;
-        margin-top: 65px;
+        margin-top: 1.25em;
         left: 0;
         width: 100vw;
     }
