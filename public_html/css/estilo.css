@@ -1,0 +1,315 @@
+
+/* -----------estilo texto------------*/
+body{
+    margin: 0; 
+    font-family:  Candara, 'Caveat' ,Helvetica, Arial, sans-serif;
+    background-image: url('../images/stories7.jpg');
+    background-size: cover;
+    background-position: center; 
+    overflow-x: hidden;
+
+/*--------- Navegador------------
+nav{
+    display: flex;
+    background-color: #387162;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+    height: 4em;
+    align-items: center;
+    
+    
+}
+& div{
+    padding: 10px;
+}
+nav a{
+    margin-top: 0;
+    color: white;
+    padding: 2px 7px 2px 7px;
+    text-decoration: none;
+}
+nav a.point:hover {
+    color: #6AE8C7;
+    cursor: pointer;
+    outline: 0;
+}
+
+a img{
+   width: 2em;
+   height: 2em;
+   padding-right: 3em;
+   border: 0;
+}
+*/
+
+.topbar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #387162;
+    color: white;
+    height: 4em;
+    padding: 10px;
+}
+
+nav-menu {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/*INICIO*/
+header {
+    font-family: 'Caveat';
+    font-size: 5em;
+    color: white;
+    text-align: center;
+}
+.intro{
+    font-family: Helvetica;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+footer{
+    text-align: center;
+    bottom: 0;
+    color: white;
+
+}
+
+/*titulos*/
+h2{
+    font-family: Candara;
+    padding-top: 3em;
+    margin-left: 0.5em;
+    font-size: 2em;
+    color: white;
+}
+
+
+
+h3 {
+    margin-left: 1em;
+    font-size: 1.5em;
+    
+}
+p{
+    text-align: justify;
+    margin-left: 2em;
+    margin-right: 1em;
+}
+
+
+
+/* -------------imagen--------------*/
+img {
+    margin-left: auto;
+    margin-right: auto;
+}
+#imagen{
+    width: 3em;
+    height: 3em;
+    margin-left: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+/*----------tabla--------------*/
+table {
+    text-align: center;
+    width: 40%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse; /*sigle border*/
+    border-color: black;
+}
+th {
+    color: white;
+    background-color: #560156;
+}
+.tipo {
+    color: white;
+    background-color: #b261b2;  
+}
+li {
+    list-style-position: inside;
+}
+
+/*----- archivos multimedia ---- */
+
+.flex {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    height: 25em;
+    background-color: #b261b2;
+    padding: 2em 2em;
+}
+.child {
+    overflow: hidden;
+}
+#audio {
+    order: 1;
+    flex: 1 1 30%;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+#video {
+    order: 2;
+    flex: 1 1 70%;
+    margin-left: 1em;
+}
+audio, video {
+    width: 90%;
+}
+audio {
+    box-shadow: black 2px 2px;
+    border-radius: 50px; 
+}
+video {
+    height: auto;
+    border: solid 5px white;
+}
+
+.flex:hover{
+    background-image: url('../images/66-661879_star.jpg');
+    background-repeat: repeat; 
+    background-size: cover; 
+}
+
+/* -----------formulario -------------*/
+form {
+    background-color: #560156;
+    color: white;
+    border: #b261b2 solid 2px;
+    padding: 2em; 
+    margin-left: 20em;
+    width: 600px;
+    border-radius: 8px;
+    line-height: 20pt;
+}
+input[type="text"], [type="number"], [type="email"]{
+    padding: 0.5em;
+    color: grey;
+    border-radius: 2px;
+    border:0.1px;
+    background-color: #f8f8f8;
+    width: 200px;
+    margin: 2px;
+    resize: none; /*no se ajusta el contenedor al texto*/
+}
+/* Selector */
+select {
+    padding: 3px 4px;
+    border:black;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+/* --- personalizar horarios ---- */
+.horario{
+    position: relative;
+    background-color: #560156;
+}
+input[type="radio"]{
+    visibility: hidden;  /*.. ocultar radio..*/
+    position: absolute;
+}
+input[type="radio"] + label::-moz-selection,
+input[type="radio"] + label::selection {
+    color: inherit;
+}
+input[type="radio"] + label {
+    cursor: pointer;
+    padding: 1em;    
+}
+input[type="radio"] + label:before { 
+    /* selector no checked*/
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    border: solid deepskyblue 1px;
+    background-color: white;
+    cursor: pointer; /*tipo de cursor que aparece al pasar encima*/
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 5px;
+}
+input[type="radio"]:checked + label:before {
+    box-shadow: inset 0 0 1px 2px white;
+    background: deepskyblue;
+}
+input [type="radio"] {
+    padding-left: 8em;
+}
+
+/* ----- personalizar checkbox ------ */
+.checkbox_modalidad{
+    position: relative;
+    background-color: #560156;
+}
+input[type="checkbox"]{
+    visibility: hidden;  /*.. ocultar checkbox..*/
+    position: absolute;
+}
+input[type="checkbox"] + label::-moz-selection,
+input[type="checkbox"] + label::selection {
+    color: inherit;
+}
+input[type="checkbox"] + label {
+    cursor: pointer;
+    padding: 1em;    
+}
+input[type="checkbox"] + label:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    border: 1px double deepskyblue;
+    cursor: pointer;
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 5px;
+}
+input[type="checkbox"]:checked + label:before {
+    /* Estilos del input seleccionado */
+    box-shadow: inset 0 0 1px 2px white;
+    background: deepskyblue;
+}
+input [type="checkbox"] {
+    padding-left: 8em;
+}
+
+/* -- botón de enviar---*/
+#submit {
+    color: white;
+    background-color: #b261b2;
+    border: solid white 2px;
+    border-style: outset;  /*efecto sombra del botón*/
+    width: 20em;
+    height: 30px;
+    text-shadow: black 0.1em 0.1em 0.1em;
+    /*centrar el elemento*/
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+
+
+
+/*  purpura medio #872187... purpura oscuro  #560156... purpura claro #b261b2 */
+/*aplicar margin y paddin que se consideren oportunos 
+Detalle de los bordes y redondeado del formulario*/
+
