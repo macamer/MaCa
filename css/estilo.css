@@ -1,5 +1,5 @@
 
-/* -----------estilo texto------------*/
+/*estilo texto*/
 body{
     margin: 0; 
     font-family:  Candara, 'Caveat' ,Helvetica, Arial, sans-serif;
@@ -26,48 +26,11 @@ html body {
     text-decoration: none;
   }
 
-/*--------- Navegador------------
-nav{
-    display: flex;
-    background-color: #387162;
-    position: fixed;
-    justify-content: space-between;
-    width: 100%;
-    height: 4em;
-    align-items: center;
-    
-    
-}
-& div{
-    padding: 10px;
-}
-nav a{
-    margin-top: 0;
-    color: white;
-    padding: 2px 7px 2px 7px;
-    text-decoration: none;
-}
-nav a.point:hover {
-    color: #6AE8C7;
-    cursor: pointer;
-    outline: 0;
-}
-
-a img{
-   width: 2em;
-   height: 2em;
-   padding-right: 3em;
-   border: 0;
-}
-*/
-
-
 /*NAVEGADOR*/
 .topbar{
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    align-items:start;
     justify-content: space-between;
     background-color: #387162;
     height: 4em;
@@ -98,7 +61,7 @@ li a{
     height: 100%;
     width: 30px;
     cursor: pointer;
-    justify-content: center;
+
     align-items: center;
 }
 
@@ -106,6 +69,13 @@ li a{
     display: none;
 }
 
+
+nav a.point:hover {
+    color: #6AE8C7;
+    cursor: pointer;
+    outline: 0;
+}
+/*ICONOS*/
 .icon-home {
     width: 2em;
     height: 2em;
@@ -113,18 +83,13 @@ li a{
     border: 0;
     filter: invert(100%)
 }
-nav a.point:hover {
-    color: #6AE8C7;
-    cursor: pointer;
-    outline: 0;
+.icon-home:hover{
+    filter: invert(70%);
 }
-
-
-
+/*nav para movil*/
 @media (max-width:768px) {
     .menu-button-container {
-        display: flex;
-        
+        display: flex; 
       }
 
     .nav-menu {
@@ -175,7 +140,7 @@ header {
     text-align: center;
 }
 .intro{
-    font-family: Helvetica;
+    font-family: Candara;
     text-align: center;
     font-size: 2em;
     color: white;
@@ -188,7 +153,39 @@ footer{
 
 }
 
-/*titulos*/
+/*titulos
+nav{
+    display: flex;
+    background-color: #387162;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+    height: 4em;
+    align-items: center;
+    
+    
+}
+& div{
+    padding: 10px;
+}
+nav a{
+    margin-top: 0;
+    color: white;
+    padding: 2px 7px 2px 7px;
+    text-decoration: none;
+}
+nav a.point:hover {
+    color: #6AE8C7;
+    cursor: pointer;
+    outline: 0;
+}
+
+a img{
+   width: 2em;
+   height: 2em;
+   padding-right: 3em;
+   border: 0;
+}
 h2{
     font-family: Candara;
     padding-top: 3em;
@@ -209,3 +206,4 @@ p{
     margin-left: 2em;
     margin-right: 1em;
 }
+*/
