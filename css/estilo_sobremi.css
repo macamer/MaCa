@@ -108,6 +108,7 @@ nav a.point:hover {
         margin-top: 1.25em;
         left: 0;
         width: 100vw;
+
     }
 
     .nav-menu__item {
@@ -132,6 +133,7 @@ nav a.point:hover {
         height: 3em;
         padding: 0.6em;
         transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    
     }
 
     .nav-menu>li {
@@ -139,6 +141,7 @@ nav a.point:hover {
         margin: 0;
         padding: 1em 0;
         width: 70%;
+
     }
 }
 
