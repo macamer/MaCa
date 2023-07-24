@@ -156,14 +156,26 @@ header {
     text-align: center;
 }
 */
-
-#titulo>img{
-    width: 100%; 
-    padding-top: 10em;  
-
+#titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-@media (min-width:768px) {
-    height: 10em;
+#titulo>img{
+    height: 80%;
+    max-height: 100vh;
+    margin-top: 5em;
+    margin-bottom: 5%;
+    /*para que la imagen no se deforme*/
+    object-fit: cover;
+}
+@media (max-width:768px) {
+    #titulo>img{
+   
+    width: 100%;
+    height: auto;
+    margin-bottom: 4%;
+}
 }
 
 /*descripcion intro*/
