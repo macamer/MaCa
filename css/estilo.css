@@ -28,14 +28,15 @@ html body {
 
 /*NAVEGADOR*/
 .topbar{
-    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
     background-color: #21302c;
-    height: 4em;
+    height: 3em;
     padding: 10px;
+    width: 100%;
 }
 
 nav-menu {
@@ -43,13 +44,14 @@ nav-menu {
   list-style: none;
   margin: 0;
   padding: 0;
+  
 }
 
 nav a{
     padding: 2px 7px 2px 7px;
 }
 
-li {
+.nav-menu__item{
     margin: 0 1rem;
     overflow: hidden;
     background-color: #21302c;
@@ -68,7 +70,7 @@ li a{
 .menu-button-container {
     display: none;
     height: 100%;
-    width: 30px;
+    width: 3em;
     cursor: pointer;
     align-items: center;
 }
@@ -88,9 +90,7 @@ nav a.point:hover {
 .icon-home {
     width: 3em;
     height: 3em;
-    margin-left: auto;
-    
-    
+    padding-right: 1.5em;
     filter: invert(100%)
 }
 .icon-home:hover{
@@ -100,17 +100,17 @@ nav a.point:hover {
 @media (max-width:768px) {
     .menu-button-container {
         display: flex; 
-        
       }
 
     .nav-menu {
         position: absolute;
-        top: 4px;
-        margin-top: 1.25em;
+        top: 2.1em;
         left: 0;
         width: 100vw;
+        /*radio no funciona
         border-radius: 5%;
         border:#6AE8C7;
+        */
         
     }
 
@@ -144,7 +144,6 @@ nav a.point:hover {
         margin: 0;
         padding: 1em 0;
         width: 70%;
-
     }
 }
 
@@ -159,16 +158,64 @@ header {
 */
 
 #titulo>img{
-    width: 100%;   
+    width: 100%; 
+    padding-top: 10em;  
 
 }
+@media (min-width:768px) {
+    height: 10em;
+}
+
+/*descripcion intro*/
+.contenedor{
+    display: flex;
+    width: 100%;
+    height: 2em;
+    color:white;
+    font-size: 2em;
+    line-height: 2em;    
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    /*ocutar elementos que se salen del contenedor*/
+    overflow: hidden;
+}
+.change{
+    list-style: none;
+    animation: cambiar 6s infinite;
+}
+@keyframes cambiar {
+    0%{margin-top: 2em;}
+    25%{margin-top: 2em;}
+    50%{margin-top: -2em;}
+    75%{margin-top: -2em;}
+    95%{margin-top: 2em;}
+    100%{margin-top: 2em;}
+}
+
+#transicion{
+    background-color: #6AE8C7;
+    width: 100%;
+    height: 4em;
+    margin-top: 2em;
+}
+/*SOBREMI*/
+#sobre_mi {
+    padding-top: 5em;
+}
+
+
+
+
+
+/*intro?
 .intro{
     font-family: Candara; sans-serif;
     text-align: center;
     font-size: 2em;
     color: white;
 }
-
+*/
 footer{
     font-family: sans-serif;;
     text-align: center;
