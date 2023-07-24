@@ -3,9 +3,9 @@
 body{
     margin: 0; 
     font-family:  Candara, 'Caveat' ,Helvetica, Arial, sans-serif;
-    background-image: url('../images/fondo.jpg');
+    /*background-image: url('../images/fondo.jpg');
     background-size: cover;
-    background-position: center; 
+    background-position: center; */
     overflow-x: hidden;
 }
 /* RESET CSS */
@@ -55,12 +55,12 @@ nav a{
     margin: 0 1rem;
     overflow: hidden;
     background-color: #21302c;
-    color: white;
+    
     text-decoration: none;
     display: inline;
 }
 li a{
-    color: white;
+    color: rgb(128, 221, 216);
 }
 .nav-menu>ul {
     display: flex;
@@ -82,7 +82,7 @@ li a{
 
 
 nav a.point:hover {
-    color: #6AE8C7;
+    color: #d895a9;
     cursor: pointer;
     outline: 0;
 }
@@ -110,8 +110,7 @@ nav a.point:hover {
         /*radio no funciona
         border-radius: 5%;
         border:#6AE8C7;
-        */
-        
+        */  
     }
 
     .nav-menu__item {
@@ -183,7 +182,7 @@ header {
     display: flex;
     width: 100%;
     height: 2em;
-    color:white;
+    color:#d895a9;
     font-size: 2em;
     line-height: 2em;    
     position: relative;
@@ -194,7 +193,7 @@ header {
 }
 .change{
     list-style: none;
-    animation: cambiar 6s infinite;
+    animation: cambiar 4s infinite;
 }
 @keyframes cambiar {
     0%{margin-top: 2em;}
@@ -206,14 +205,21 @@ header {
 }
 
 #transicion{
-    background-color: #6AE8C7;
+    background-image: url('../images/fondo1.jpg');
+    background-size: cover;
+    background-position: center; 
     width: 100%;
     height: 4em;
     margin-top: 2em;
+    margin-bottom: 0;
 }
 /*SOBREMI*/
-#sobre_mi {
-    padding-top: 5em;
+article{
+    background-image: url('../images/fondo2.jpg');
+}
+h2,#sobremi{
+    padding-top: 2em;
+    margin-top: 0;
 }
 
 
@@ -276,9 +282,6 @@ h2{
     font-size: 2em;
     color: white;
 }
-
-
-
 h3 {
     margin-left: 1em;
     font-size: 1.5em;

@@ -58,7 +58,7 @@
                      
         
         <header>
-            <div id="titulo"><img src="images/animalsalvaje-web.png" alt="firma"></div>
+            <div id="titulo"><img src="images/animalsalvaje-web2.png" alt="firma"></div>
         </header>
         <main> 
             <div class="contenedor">
@@ -235,5 +235,17 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consequatur, volup
         <br/><br/>
         <footer> Maria Cavaller    2023</footer>
         
+
+        <script>
+            // Escucha el evento de clic en los elementos del menú
+            const menuItems = document.querySelectorAll('.nav-menu__item');
+            menuItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    // Oculta automáticamente la lista de elementos al hacer clic
+                    const menuToggle = document.getElementById('menu-toggle');
+                    menuToggle.checked = false;
+                });
+            });
+        </script>
     </body>
 </html>
