@@ -60,7 +60,7 @@ nav a{
     display: inline;
 }
 li a{
-    color: rgb(128, 221, 216);
+    color: white;
 }
 .nav-menu>ul {
     display: flex;
