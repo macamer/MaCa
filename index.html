@@ -35,29 +35,50 @@
                     <img class="icon-home" src="images/menu1.svg" alt="icon menu"/>
                 </label>
                 <div class="menu-button"></div>
-                <nav class="nav-menu">
-                    <ul class="nav-menu">
-                        <li class="nav-menu__item">
-                            <a class="point" href="#sobre_mi"> SOBRE MI</a>
-                        </li>
-                        <li class="nav-menu__item">
-                            <a class="point" href="maca_web.html">DESARROLLO WEB</a>
-                        </li>
-                        <li class="nav-menu__item">
-                            <a class="point" href="maca_proj.html">PROYECTOS</a>
-                        </li>
-                        <li class="nav-menu__item">
-                            <a class="point" href="maca_contacto.html">CONTACTO</a>
-                        </li>
-                    </ul>
-                </nav>
+                    <nav class="nav-menu">
+                        <ul class="nav-menu">
+                            <li class="nav-menu__item">
+                                <a class="point" href="#sobre_mi"> SOBRE MI</a>
+                            </li>
+                            <li class="nav-menu__item">
+                                <a class="point" href="maca_web.html">DESARROLLO WEB</a>
+                            </li>
+                            <li class="nav-menu__item">
+                                <a class="point" href="maca_proj.html">PROYECTOS</a>
+                            </li>
+                            <li class="nav-menu__item">
+                                <a class="point" href="maca_contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </nav>
                 <div class="nav-menu__button">
                     <a href="#page-top"><img class="icon-home" src="images/prueba3.svg" alt="icono"></a>
                 </div>
             </div>
                      
         
-        <header>
+        <header id="maca"> 
+            <!-- CAMBIAR IMAGEN CADA 2 S ---------
+            <img id="imagen-cambiante" src="" alt="Imagen Cambiante">
+            <script>
+                const imagenes = [
+                'images/animalsalvaje-web2.png',
+                'images/animalsalvaje-web3.png',
+                ]
+                function cambiarImagen() {
+                    const imgElement = document.getElementById('imagen-cambiante');
+                    let index = 0;
+                    setInterval(() => {
+                        imgElement.src = imagenes[index];
+                        index = (index + 1) % imagenes.length;
+                    }, 2000); // 4000 milisegundos = 4 segundos
+                }
+
+                // Inicia el cambio de imagen al cargar la página
+                cambiarImagen();
+            </script>
+            -->
+            
             <div id="titulo"><img src="images/animalsalvaje-web2.png" alt="firma"></div>
         </header>
         <main> 
@@ -77,14 +98,19 @@
         <article>
                 <h2 id="sobre_mi">SOBRE MI</h2>
             <section> 
-                <p>Buenas a todas y todos, me llamo Maria aunque mi nombre artístico es MaCa. El nombre de Maria, a pesar de ser bonito, también es demasiado común. Creo que ahora ha bajado de la lista de los nombres más usados, pero creo que aún así está en el top 5.
+                <div class="flexbox">
+                <div class="texto">
+                    <p>Buenas a todas y todos, me llamo Maria aunque mi nombre artístico es MaCa. El nombre de Maria, a pesar de ser bonito, también es demasiado común. Creo que ahora ha bajado de la lista de los nombres más usados, pero creo que aún así está en el top 5.
                     Así que decidí crear el nombre de <b>MaCa</b>.</p></br>
-                    <p>Nací y crecí en una maravillosa isla de las Islas Baleares, <b>Menorca</b>. Creo que es de entender, que esa uno de mis lugares favoritos en el mundo.</p>                    
+                    <p>Nací y crecí en una maravillosa isla de las Islas Baleares, <b>Menorca</b>. Creo que es de entender, que esa uno de mis lugares favoritos en el mundo.</p>               
                     <p> Las circustancias hicieron que me fuera a Valencia a estudiar <i>Restauración y Consevación de los Bienes Culturales</i> en la Universidad Politécnica de Valencia.
                     La carrera me permitió conocer multitud de técnicas y desarrollo artístico, tanto a nivel de creación sino también su composición. Es curioso porque desde pequeños cogemos lápices de colores
                     y un papel y nos ponemos a dibujar sin pensar el porque el color se traslada de tal forma sobre la superficie. La reacción física y química de los materiales
                     es esencial para comprender la creación artística.</p> 
-                   
+                </div>
+                    <div class="images_me"><img src="images/menorca.png" alt="menorca"/>
+                    <img src="" alt=""></div>
+                </div>
                    
 
 
